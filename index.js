@@ -7,7 +7,7 @@ const dotenv = require("dotenv").config;
 const URL = process.env.DB;
 
 
-// Middleweare
+
 app.use(express.json());
 app.use(
   cors({
@@ -18,7 +18,6 @@ app.use(
 app.get('/', (req, res) => {
   res.send('hello world')
 });
-
 
 
 app.post("/login", async function (req, res) {
